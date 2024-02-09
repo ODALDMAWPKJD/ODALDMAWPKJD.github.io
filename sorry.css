@@ -1,0 +1,49 @@
+body{
+   background-color:#E3FDFD   
+}
+div{
+display: flex;
+justify-content: center;
+align-items: center;    
+}
+button{
+position: absolute;
+top: 60%;
+width: 10%;
+border-radius: 16px;
+}
+#btn-1{
+margin: 50px;
+font-size: 3rem;
+background-color: #ff9800;
+border: none;
+right: 20px;
+right: 35%;
+}
+#btn-1:hover{
+    background-color: #ff5722;
+    cursor: pointer;
+}
+#btn-2{
+    margin: 50px;
+    right: 48%;
+    font-size: 3rem;
+    background-color: #ff4d4d;
+    }
+#btn-2:hover{
+cursor: pointer;
+background-color: #ff9800;    
+}
+h1{
+font-size: 5rem;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#gif{
+position:absolute;
+top: 25%;
+left: 42%;
+}
+a{
+text-decoration: none;
+color: black;
+}
