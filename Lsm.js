@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const button = document.getElementById('BTN');
     const closebtn = document.getElementById('cls-btn');
     const container = document.querySelector('.main-container');
+    const body = document.querySelector('body');
     let isOpen = true;
     let isClose = true;
     button.addEventListener('click', isToggleContainer);
@@ -28,17 +29,19 @@ function showContainer() {
 function buttonHideShow(){
     button.style.display = 'none';
     container.style.display = 'block';
-    closebtn.style.display = "block";
+    closebtn.style.display = "none";
+    body.style.backgroundColor = "#070F2B";
 }
-function close(){
-if(isClose){
-    closeContainer();
-    isClose = false;
-    document.getElementById('cls-btn').innerText = "OPEN";
+//function close(){
+    
+//if(isClose){
+    //closeContainer();
+    //isClose = false;
+   // document.getElementById('cls-btn').innerText = "OPEN";
+//}
+//else{
+    //showContainer()
+    //isClose = true;
+    //document.getElementById('cls-btn').innerText = "ClOSE";
 }
-else{
-    showContainer()
-    isClose = true;
-    document.getElementById('cls-btn').innerText = "ClOSE";
-}
-}})
+)
