@@ -1,0 +1,473 @@
+body{
+    background-color:#F8E8EE ;
+    height: 100vh;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav-bar {
+    width: 100%;
+    border-bottom: 3px solid black;
+    background-color:#7BD3EA ;
+    position: fixed;
+    z-index: 1;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar ul{
+    display: flex;
+    list-style:none;
+    gap: 50px;
+    padding: 10px;
+    
+}
+ul li a{
+    margin-right:50px ;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#logo{
+    font-family: Arial, Helvetica, sans-serifVerdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight:900;
+    color: black;
+    text-decoration: none;
+    margin-left: 100px;
+}
+.desc h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    width: 100%;
+    margin-top: 20px;
+}
+.desc p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+
+}
+.generate{
+    width: 550px;
+    height: 350px;
+    border-radius: 16px;
+    background-color:#FDA403 ;
+    border: 3px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+}
+.in-b{
+    width: 450px;
+    height: 250px;
+    background-color: skyblue;
+    border-radius: 10px;
+    position: absolute;
+    left:9%;
+    top: 20px;
+    right: 30%;
+    border: 3px solid black;
+}
+.footer-nav{
+    width: 100%;
+    border: 3px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    gap: 50px;
+}
+.btn{
+    position: absolute;
+    font-size: 20px;
+    bottom: 15px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    left: 25%;
+    right: 50%;
+    background-color:#F6F193 ;
+    border: 2px solid black;
+    color: black;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.footer-nav a{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: black;
+    text-decoration: none;
+
+}
+.text-in{
+    color: black;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+
+}
+@media(max-width:430px) {
+    .desc h1{
+        font-size: 20px;
+        position: relative;
+        left: 8%;
+    }
+    .desc p{
+        font-size: 15px;
+        position: relative;
+        left: 3%;
+    }
+    .footer-nav{
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+    body,html{
+        height:100vh;
+        overflow: hidden;
+    }
+    .footer-nav a{
+        font-size: 15px;
+    }
+    ul li a {
+        margin-right: 4rem;
+    }
+    .generate{
+        width: 400px;
+        position: relative;
+    }
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-bar{
+        width: 100%;
+    }
+    .in-b{
+        width: 330px;
+    }
+    .text-in{
+        font-size: 20px;
+        width: 80%;
+    }
+}
+
+
+@media(max-width:600px){
+    .desc h1{
+        font-size: 45px;
+        position: relative
+        ;
+        left: 3%;
+        width: 100%;
+    }
+    .desc p{
+        font-size: 15px;
+        position: relative;
+        left: 15%;
+    }
+    .footer-nav{
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+    body,html{
+        height:100vh;
+        overflow: hidden;
+    }
+    .footer-nav a{
+        font-size: 15px;
+    }
+    ul li a {
+        margin-right: 4rem;
+    }
+    .generate{
+        width: 500px;
+        position: relative;
+    }
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-bar{
+        width: 100%;
+    }
+    .in-b{
+        width: 410px;
+    }
+    .text-in{
+        font-size: 25px;
+        width: 90%;
+    }
+}
+
+
+@media(width < 531px){
+    .desc h1{
+        font-size: 38px;
+        position: relative
+        ;
+        left: 3%;
+        width: 100%;
+    }
+    .desc p{
+        font-size: 15px;
+        position: relative;
+        left: 8%;
+    }
+    .footer-nav{
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+    body,html{
+        height:100vh;
+        overflow: hidden;
+    }
+    .footer-nav a{
+        font-size: 15px;
+    }
+    ul li a {
+        margin-right: 4rem;
+    }
+    .generate{
+        width: 500px;
+        position: relative;
+    }
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-bar{
+        width: 100%;
+    }
+    .in-b{
+        width: 410px;
+    }
+    .text-in{
+        font-size: 25px;
+        width: 90%;
+    }
+}
+
+@media(width < 500px){
+    .desc h1{
+        font-size: 20px;
+        position: relative;
+        left: 8%;
+    }
+    .desc p{
+        font-size: 15px;
+        position: relative;
+        left: 3%;
+    }
+    .footer-nav{
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+    body,html{
+        height:100vh;
+        overflow: hidden;
+    }
+    .footer-nav a{
+        font-size: 15px;
+    }
+    ul li a {
+        margin-right: 4rem;
+    }
+    .generate{
+        width: 400px;
+        position: relative;
+    }
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-bar{
+        width: 100%;
+    }
+    .in-b{
+        width: 330px;
+    }
+    .text-in{
+        font-size: 20px;
+        width: 80%;
+    }
+}
+
+
+@media(max-width:600px){
+    .desc h1{
+        font-size: 45px;
+        position: relative
+        ;
+        left: 3%;
+        width: 100%;
+    }
+    .desc p{
+        font-size: 15px;
+        position: relative;
+        left: 15%;
+    }
+    .footer-nav{
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+    body,html{
+        height:100vh;
+        overflow: hidden;
+    }
+    .footer-nav a{
+        font-size: 15px;
+    }
+    ul li a {
+        margin-right: 4rem;
+    }
+    .generate{
+        width: 500px;
+        position: relative;
+    }
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-bar{
+        width: 100%;
+    }
+    .in-b{
+        width: 410px;
+    }
+    .text-in{
+        font-size: 25px;
+        width: 90%;
+    }
+}
+
+
+@media(width < 531px){
+    .desc h1{
+        font-size: 30px;
+        position: relative
+        ;
+        left: 5%;
+        width: 100%;
+    }
+    .desc p{
+        font-size: 15px;
+        position: relative;
+        left: 1%;
+    }
+    .footer-nav{
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+    body,html{
+        height:100vh;
+        overflow: hidden;
+    }
+    .footer-nav a{
+        font-size: 15px;
+    }
+    ul li a {
+        display: none;
+    }
+    .generate{
+        width: 400px;
+        position: relative;
+    }
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-bar{
+        width: 100%;
+    }
+    .in-b{
+        width: 328px;
+    }
+    .text-in{
+        font-size: 25px;
+        width: 95%;
+    }
+    #logo{
+        position: relative;
+        left: 75px;
+        margin: 0;
+    }
+}
+@media (width < 361px){
+    .desc h1{
+        font-size: 25px;
+        position: relative
+        ;
+        left: 5%;
+        width: 100%;
+    }
+    .desc p{
+        font-size: 13px;
+        position: relative;
+        left: 1%;
+    }
+    .footer-nav{
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+    body,html{
+        height:100vh;
+        overflow: hidden;
+    }
+    .footer-nav a{
+        font-size: 15px;
+    }
+    ul li a {
+        margin-right: 4rem;
+    }
+    .generate{
+        width: 350px;
+        position: relative;
+    }
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-bar{
+        width: 100%;
+    }
+    .in-b{
+        width: 290px;
+    }
+    .text-in{
+        font-size: 25px;
+        width: 95%;
+    }
+}
