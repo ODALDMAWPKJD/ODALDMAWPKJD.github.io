@@ -1,12 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
-const showbtn = document.querySelector(".show-btn")
-const mainbox = document.querySelector(".main-box");
-const body1 = document.getElementById('body')
-showbtn.addEventListener("click",()=>{
-mainbox.style.visibility = 'visible';
-showbtn.style.display = 'none';
-}
-)})
+document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.querySelector('.btn');
+    let text = document.querySelector('.text-in')
+    let isClick = true;
+    let messages = [
+        "Nigga",
+        "Hangol ug siopao",
+        "Di mo bayad",
+        "NIgga japon",
+        "Untro pod ka NIgga",
+    ];
 
-
-
+    btn.addEventListener('click', () => {
+        if (isClick) {
+            text.innerHTML = messages[Math.floor(Math.random() * messages.length)];
+        }
+    }); 
+});
